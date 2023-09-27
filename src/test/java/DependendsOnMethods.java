@@ -2,12 +2,12 @@ import org.testng.annotations.Test;
 
 public class DependendsOnMethods {
 
-        @Test(dependsOnMethods = {"loginTest"})
+        @Test(dependsOnMethods = {"LoginTest"})
         public void sendMessageTest() {
             System.out.println("Test is successfully!!!");
 
         }
-        @Test(dependsOnMethods = {"loginTest"})
+        @Test(dependsOnMethods = {"LoginTest"})
         public void postImage() {
             System.out.println("postImage is successfully");
 
@@ -20,7 +20,7 @@ public class DependendsOnMethods {
 
         @Test(dependsOnMethods = {"registerAccountTest"})
         public void loginTest() {
-            System.out.println("Test4");
+            System.out.println("Test4 is excuted");
             try {
                 Thread.sleep(5000);
             } catch (Exception e) {}
