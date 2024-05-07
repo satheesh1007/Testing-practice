@@ -28,7 +28,11 @@ public class GroupTest {
 
         @Test
         public void test2() {
-            System.out.println("Test 2 is excuted");
+        System.out.println("Test 2 is excuted");
+    }
+
+        @Test
+        public void test3(){System.out.println("Test 3 is successfully");
         }
 
     }

@@ -10,6 +10,10 @@ public class DataProviderTest {
         public void signInTest(String username, String password){
             System.out.println( username + " " + password);
         }
+        @Test(dataProvider = "signup-data",dataProviderClass = SignupTestdata.class)
+        public void signupTest(String username, String password) {
+            System.out.println(username + " " + password);
+        }
         @DataProvider(name = "login-data")
         Object[][] loginData() {
             Object[][] data = {
@@ -18,6 +22,7 @@ public class DataProviderTest {
                     {"krithik", "krith321"},
             };
             return data;
+
         }
 
     }

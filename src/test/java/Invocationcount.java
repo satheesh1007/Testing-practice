@@ -12,6 +12,9 @@ public class Invocationcount {
 
     @Test(invocationCount = 6)
     public void count3() { system.out.println("season1");
-
+    }
+    @Test(invocationCount = 12)
+    public void count4(){
+        System.out.println("season2");
     }
 }
